@@ -22,7 +22,7 @@
         function fileList(dirPath, fileName) {
             $.ajax({
                 type: "POST",
-                url: '/ftp/main.php',
+                url: './main.php',
                 data: {
                     'dirPath': dirPath,
                 },
@@ -37,7 +37,7 @@
         function loadFile(filePath, fileName) {
             $.ajax({
                 type: "POST",
-                url: '/ftp/main.php',
+                url: './main.php',
                 data: {
                     'saveFile': 'true',
                     'filePath': filePath,
@@ -58,7 +58,7 @@
         function changeDir(newDir) {
             $.ajax({
                 type: "POST",
-                url: '/ftp/main.php',
+                url: './main.php',
                 data: {
                     'changeDir': newDir,
                 },
